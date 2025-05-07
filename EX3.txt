@@ -1,0 +1,71 @@
+whoami
+who
+
+pwd
+
+sudo adduser sanjana
+cat /etc/passwd
+
+sudo cat /etc/shadow
+
+sudo addgroup ThirdYear
+cat /etc/group
+
+vi sam.sh
+ls -l
+
+ls -a
+
+vi sample.txt
+ls -l
+chmod o-r sample.txt
+chmod g+x sample.txt
+chmod o-rw sample.txt
+chmod o+r+w sample.txt
+chmod 777 sample.txt
+chmod 000 sample.txt
+chmod 600 sample.txt
+
+vi greet.sh
+echo "What is your name?"
+read user
+echo "Hello $user!!"
+
+vi math.sh
+echo "Enter 1st number:"
+read a
+echo "Enter 2nd number:"
+read b
+echo "Sum= $((a+b))"
+echo "Difference= $((a-b))"
+echo "Multiplication= $((a*b))"
+echo "Division= $((a/b))"
+
+
+output:
+student
+student tty1 2024-03-07 09:00
+/home/student
+Adding user `sanjana' ...
+Done.
+...
+sanjana:x:1001:1001::/home/sanjana:/bin/bash
+...
+sanjana:$6$abcd1234...:19500:0:99999:7:::
+Adding group `ThirdYear' (GID 1002) ...
+...
+ThirdYear:x:1002:
+-rw-r--r-- 1 student student 0 Mar 7 09:10 sam.sh
+.  ..  .bashrc  sam.sh
+-rw-r--r-- 1 student student 0 Mar 7 09:12 sample.txt
+What is your name?
+Alice
+Hello Alice!!
+Enter 1st number:
+20
+Enter 2nd number:
+5
+Sum= 25
+Difference= 15
+Multiplication= 100
+Division= 4
